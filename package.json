@@ -6,8 +6,9 @@
   "scripts": {
     "test": "No test",
     "start": "node server.js",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ."
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
   },
   "devDependencies": {
     "css-loader": "^0.26.1",
+    "gh-pages": "^6.2.0",
     "json-loader": "^0.5.4",
     "react-addons-css-transition-group": "^15.4.1",
     "style-loader": "^0.13.1"
