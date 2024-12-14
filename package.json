@@ -6,9 +6,9 @@
   "scripts": {
     "test": "No test",
     "start": "node server.js",
-    "build": "webpack --mode production",
+    "build": "webpack --config webpack.config.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d ."
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
